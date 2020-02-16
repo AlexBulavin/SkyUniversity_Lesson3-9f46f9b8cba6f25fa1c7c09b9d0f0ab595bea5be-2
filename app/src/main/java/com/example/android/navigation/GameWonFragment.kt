@@ -62,6 +62,7 @@ class GameWonFragment : Fragment() {
                 .setText(getString(R.string.share_success_text, args.numCorrect, args.numQuestions))
                 .setType("text/plaint")
                 .intent
+
 //        val shareIntent = Intent(Intent.ACTION_SEND)
 //        shareIntent.setType("text/plain")//Для картинок нужно использовать "image/jpg"
 //                .putExtra(Intent.EXTRA_TEXT,
