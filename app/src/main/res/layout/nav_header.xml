@@ -18,24 +18,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navHeader"
     android:layout_width="match_parent"
-    android:layout_height="192dp"
+    android:layout_height="147dp"
     android:background="#FDFDFD"
-    android:padding="16dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
 
     <ImageView
         android:id="@+id/navHeaderImage"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="@dimen/horizontal_margin"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="@dimen/horizontal_margin"
-        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/r4s_logo" />
+        app:srcCompat="@drawable/drawer_header" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
