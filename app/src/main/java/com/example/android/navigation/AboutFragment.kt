@@ -29,7 +29,7 @@ class AboutFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val aboutText = getString(R.string.about_text)
+        //val aboutText = getString(R.string.about_text)
         //val aboutTextView = findViewByID<TextView>(R.id.rulesText)
        // aboutTextView.setText(Html.fromHtml(aboutText))
         //findViewById<TextView>(R.id.rulesText).setText(Html.fromHtml(aboutText))

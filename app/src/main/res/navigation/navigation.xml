@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
+    android:label="@string/title_trivia_rules"
     app:startDestination="@id/titleFragment">
 
     <fragment
@@ -64,6 +65,6 @@
     <fragment
         android:id="@+id/rulesFragment"
         android:name="com.example.android.navigation.RulesFragment"
-        android:label="fragment_rules"
+        android:label="@string/title_trivia_rules"
         tools:layout="@layout/fragment_rules" />
 </navigation>
