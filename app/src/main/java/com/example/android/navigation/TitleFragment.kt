@@ -11,6 +11,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.android.navigation.databinding.FragmentTitleBinding
 import kotlinx.android.synthetic.main.fragment_about.*
+import android.view.LayoutInflater
+
 
 /**
  * A simple [Fragment] subclass.
@@ -22,8 +24,9 @@ class TitleFragment : Fragment() {
 
         val binding: FragmentTitleBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_title, container,false)
-        binding.playButton.setOnClickListener (
-                Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment))
+        binding.playButton.setOnClickListener {v: View ->
+            v.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment()) }
+                //Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment))
         setHasOptionsMenu(true)
         return binding.root
     }
